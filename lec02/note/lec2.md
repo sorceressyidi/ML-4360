@@ -33,4 +33,29 @@
 ![Alt text](<d.png>)
 >$\tilde{l}'$ = $(\tilde{H}^T)^{-1}$$\tilde{l}$
 ### Direct Linear Transform for Homography Estimation[algorithm DLT]
+* UDV！
+## 2.2 Geometric Image Formation
+>Orthographic projection
 
+>Perspective　projection
+
+![Alt text](f.png)
+>lens distortion
+* radial and tangential distortion![Alt text](f.png)
+## 2.3 Photometric Image Formation
+### $Rendering Equation$
+* intensity :power per solid angle
+>$dw=\sin\theta$$d\theta$$d\phi$
+* Irradiance ： power per unit area
+>E(x)=d$\Phi(x)$/dA
+* Radiannce
+>L(p,w)=$d^2\Phi(p,\omega)$/$d\omega$$dAcos\theta$
+![Alt text](<g.png>)
+#### $BRDF$ "$Radiance_{out}/Irradiance_{in}$"
+#### $The Reflection Equation$
+![Alt text](<i.png>)
+![Alt text](h.png)
+### Back To Cameras
+![Alt text](<j.png>)
+### $Chromatic Aberration$
+## 2.4 Image Sensing Pipeline
