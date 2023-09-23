@@ -40,6 +40,7 @@ def get_perspective_projection(x_c, K):
     done_x_c = projected_x_c[:2]/projected_x_c[-1]
     assert( done_x_c.shape == (2,))
     return done_x_c
+
 def project_cube(cube,K):
     s = cube.shape
     assert(s[-1] == 3)

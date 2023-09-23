@@ -77,6 +77,7 @@ def get_homography(points_source, points_target):
     A = get_A(points_source,points_target)
     u, s, vh = np.linalg.svd(A)
     H = vh[-1].reshape(3, 3)
+    H = H/H[2,2]
     return H
 #stiching~
 def stich_images(img1, img2, H):
