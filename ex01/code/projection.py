@@ -48,6 +48,8 @@ def project_cube(cube,K):
     projected = projected.reshape(*s[:-1],2)
     return projected
 
+# a=np.array([1,2,3])
+# a.shape = (3,)
 
 
 def plot_projected_cube(projected_cube, figsize=(5, 5), figtitle=None, colors=None, face_mask=None):
@@ -71,7 +73,7 @@ def plot_projected_cube(projected_cube, figsize=(5, 5), figtitle=None, colors=No
 def get_face_color(normal,point_light_direction=(0,0,1)):
     assert (normal.shape==(3,))
     point_light_direction = np.array(point_light_direction,dtype = np.float32)
-    light_intensity = np.sum(normal * (-point_light_direction))
+    light_intensity = np.sum(normal * (-point_light_direction))#!
     #color_intensity = light_intensity
     color_intensity = 0.1 + (light_intensity * 0.5 + 0.5) * 0.8
     color = np.stack([color_intensity for i in range(3)])
